@@ -1,0 +1,560 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1200px;
+    font-family: 'font', sans-serif;
+    background-color: #F1F1F1;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    padding: 16px 0;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header-logo {
+    margin-right: 40px;
+}
+
+.phone-number {
+    margin-right: auto;
+    font-size: 20px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.account-link {
+    padding-left: 29px;
+    color: #CC9933;
+    text-decoration: none;
+    background-image: url("../img/header-icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px 24px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    padding: 20px 45px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.header-nav {
+    margin-right: 114px;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 45px;
+}
+
+.header-link {
+    font-size: 16px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header-btn-1,
+.header-btn-2 {
+    color: #CC9933;
+    background: transparent;
+    border: 1px solid #CC9933;
+}
+
+.special-offers {
+    margin-top: 70px;
+}
+
+.section-title {
+    margin: 0 0 20px 40px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.special-offers-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 540px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 24px;
+}
+
+.special-offers-item {
+    width: 573px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.item-1 {
+    height: 258px;
+    background-image: url("../img/offer-1.png");
+    order: 1;
+}
+
+.item-3 {
+    height: 258px;
+    background-image: url("../img/offer-3.png");
+    order: 2;
+}
+
+.item-2 {
+    height: 540px;
+    background-image: url("../img/offer-2.jpg");
+    order: 3;
+}
+
+.special-offers-block {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+.special-offers-title,
+.special-offers-descr,
+.special-offers-link {
+    position: absolute;
+    left: 45px;
+    margin: 0;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.special-offers-link {
+    color: #FFCC66;
+}
+
+.item-1 .special-offers-title,
+.item-3 .special-offers-title {
+    top: 40px;
+    max-width: 420px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.item-1 .special-offers-descr,
+.item-3 .special-offers-descr {
+    top: 135px;
+    font-size: 20px;
+}
+
+.item-1 .special-offers-link,
+.item-3 .special-offers-link {
+    top: 202px;
+    padding-right: 15px;
+    font-size: 16px;
+    background-image: url("../img/offer-icon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 11px 11px;
+}
+
+.item-2 .special-offers-title {
+    top: 212px;
+    max-width: 420px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.item-2 .special-offers-descr {
+    top: 407px;
+    font-size: 30px;
+}
+
+.item-2 .special-offers-link {
+    top: 484px;
+    padding-right: 15px;
+    font-size: 16px;
+    background-image: url("../img/offer-icon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 11px 11px;
+}
+
+.about-us {
+    margin-top: 70px;
+}
+
+.about-us .container {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 282px;
+    padding-left: 0;
+    font-family: 'Muller', sans-serif;
+}
+
+.about-us .section-title {
+    margin: 0 0 20px 40px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.about-us .section-descr {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    color: #000000;
+}
+
+.services {
+    margin-top: 70px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 24px;
+}
+
+.services-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.service-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.service-block-img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+}
+
+.service-block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 26px 45px 35px;
+}
+
+.service-block-title {
+    margin: 0 0 10px;
+}
+
+.service-title-link {
+    display: inline-block;
+    padding-right: 15px;
+    font-family: 'Muller', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 200%;
+    color: #CC9933;
+    background-image: url("../img/service-icon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 11px 11px;
+}
+
+.service-block-descr {
+    margin: 0;
+    font-family: 'Muller', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #000000;
+}
+
+.advantages {
+    margin-top: 70px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 22px;
+}
+
+.advantages-item {
+    width: calc((100% - 66px) / 4);
+    min-height: 276px;
+    padding: 116px 45px 30px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: 45px 40px;
+    background-size: 64px 66px;
+    border-radius: 15px;
+}
+
+.advantages-item:nth-child(1) {
+    background-image: url('../img/bathtub-1.png');
+}
+
+.advantages-item:nth-child(2) {
+    background-image: url('../img/hanger-2.png');
+}
+
+.advantages-item:nth-child(3) {
+    background-image: url('../img/heating-3.png');
+}
+
+.advantages-item:nth-child(4) {
+    background-image: url('../img/hotel-key-4.png');
+}
+
+.advantages-item:nth-child(5) {
+    background-image: url('../img/parking-5.png');
+}
+
+.advantages-item:nth-child(6) {
+    background-image: url('../img/reception-6.png');
+}
+
+.advantages-item:nth-child(7) {
+    background-image: url('../img/security-box-7.png');
+}
+
+.advantages-item:nth-child(8) {
+    background-image: url('../img/swimming-pool-8.png');
+}
+
+.advantages-item-descr {
+    margin: 0;
+    font-family: 'Muller', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #000000;
+}
+
+.placement {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.placement-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 24px;
+}
+
+.placement-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.placement-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.placement-block-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.placement-block-text {
+    padding: 24px 45px 20px;
+}
+
+.placement-price {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.placement-price .from {
+    margin-right: 4px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.placement-price .price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.placement-price .night {
+    font-size: 16px;
+    color: #000000;
+}
+
+.stars-1,
+.stars-2,
+.stars-3,
+.stars-4,
+.stars-5,
+.stars-6,
+.stars-7,
+.stars-8 {
+    position: absolute;
+    top: 260px;
+    right: 45px;
+    display: flex;
+    width: max-content;
+}
+
+.stars-1 img,
+.stars-2 img,
+.stars-3 img,
+.stars-4 img,
+.stars-5 img,
+.stars-6 img,
+.stars-7 img,
+.stars-8 img {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.stars-1 img:not(:last-child),
+.stars-2 img:not(:last-child),
+.stars-3 img:not(:last-child),
+.stars-4 img:not(:last-child),
+.stars-5 img:not(:last-child),
+.stars-6 img:not(:last-child),
+.stars-7 img:not(:last-child),
+.stars-8 img:not(:last-child) {
+    margin-right: 6px;
+}
+
+.placement-block-title {
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.placement-block-descr {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.placement-btn {
+    width: fit-content;
+    margin-bottom: 40px;
+    margin-left: 45px;
+    padding: 13px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CC9933;
+    background: transparent;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.block-9 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 440px;
+    height: 100%;
+    padding: 0 0 27px 54px;
+    background-image: url('../img/placement-9.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.placement-link {
+    display: inline-block;
+    padding-right: 20px;
+    font-family: 'Miller', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-image: url('../img/placement-icon.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
